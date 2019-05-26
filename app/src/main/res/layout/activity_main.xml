@@ -6,6 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.a51006705.timer.MainActivity">
 
+
+    <EditText
+        android:id="@+id/editText_setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_timer"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Time" />
+
+    <Button
+        android:id="@+id/button_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:layout_alignTop="@+id/editText_setTime"
+        android:layout_toEndOf="@+id/editText_setTime"
+        />
+
     <TextView
         android:id="@+id/textView_timer"
         android:layout_width="wrap_content"
@@ -34,4 +53,6 @@
         android:visibility="invisible"
         tools:visibility="visible"
         android:layout_marginLeft="11dp" />
+
+
 </RelativeLayout>
